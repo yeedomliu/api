@@ -3,6 +3,7 @@
 @ob_start();
 echo "<?php\n";
 isset($namespace) ?? $namespace = '';
+
 ?>
 
 namespace <?=$namespace?>;

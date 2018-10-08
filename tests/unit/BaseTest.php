@@ -12,50 +12,50 @@ class BaseTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testJsonEncodeFields() {
-
+        $this->assertTrue(true);
     }
 
-    public function testExcludeFields() {
+//    public function testExcludeFields() {
+//        $this->assertTrue(true);
+//    }
 
-    }
-
-    public function testCustomFields() {
-
-    }
-
-    public function testGetFieldNameHandleObj() {
-
-    }
-
-    public function testRequestHandle() {
-
-    }
-
-    public function testGetHandledFields() {
-
-    }
-
-    public function testCustomOutput() {
-
-    }
-
-    public function testGetUri() {
-
-    }
-
-    public function testRequestHeaders() {
-
-    }
-
-    public function testGetRequestObj() {
-
-    }
-
-    public function testStart() {
-
-    }
-
-    public function testCheckResult() {
-
-    }
+    //    public function testCustomFields() {
+    //
+    //    }
+    //
+    //    public function testGetFieldNameHandleObj() {
+    //
+    //    }
+    //
+    //    public function testRequestHandle() {
+    //
+    //    }
+    //
+    //    public function testGetHandledFields() {
+    //
+    //    }
+    //
+    //    public function testCustomOutput() {
+    //
+    //    }
+    //
+    //    public function testGetUri() {
+    //
+    //    }
+    //
+    //    public function testRequestHeaders() {
+    //
+    //    }
+    //
+    //    public function testGetRequestObj() {
+    //
+    //    }
+    //
+    //    public function testStart() {
+    //
+    //    }
+    //
+    //    public function testCheckResult() {
+    //
+    //    }
 }

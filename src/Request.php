@@ -2,7 +2,6 @@
 
 namespace yeedomliu\api;
 
-use wii\base\Component;
 use yeedomliu\api\requestfields\CacheKey;
 use yeedomliu\api\requestfields\CacheTime;
 use yeedomliu\api\requestfields\ConnectTimeout;
@@ -27,7 +26,7 @@ use yeedomliu\api\requestfields\Url;
  * 接口保持最简洁的功能，其它功能通过事件注入进来
  *
  */
-class Request extends Component
+class Request
 {
 
     use Prefix, Url, FullUrl, Fields, Method, JsonEncodeFields, Headers, ExcludeFields, CurlOptions, HttpBuildQuery, CacheTime, CacheKey, ProxyClass, Timeout, ConnectTimeout, ExcludeEmptyField, OutputFormatObj;
