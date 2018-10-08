@@ -33,7 +33,7 @@
 通过以下代码，可以快速实现访问一个接口请求
 
 ```php
-class QuickStart extends \wii\interfaces\Base {
+class QuickStart extends \yeedomliu\api\Base {
     public function url() {
 		return 'https://cvm.tencentcloudapi.com/?Action=DescribeInstances';
     }
@@ -71,7 +71,7 @@ Array
 
 ### 获取AccessToken接口类封装
 
-所有的接口请求都必须继承`\wii\interfaces\Base`类，它对接口请求做了统一包装，文件保存在`models/workwx/AccessToken.php`
+所有的接口请求都必须继承`\yeedomliu\api\Base`类，它对接口请求做了统一包装，文件保存在`models/workwx/AccessToken.php`
 
 
 ```php
@@ -208,7 +208,7 @@ Array
 ```php
 namespace app\models\workwx;
 
-class Base extends \wii\interfaces\Base
+class Base extends \yeedomliu\api\Base
 {
 
     public function requestPrefix() {
