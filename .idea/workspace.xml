@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/example/AccessToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/AccessToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/AccessTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/AccessTokenTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,7 @@
           <entry key="gitignore" value="4" />
           <entry key="json" value="5" />
           <entry key="md" value="9" />
-          <entry key="php" value="64" />
+          <entry key="php" value="66" />
           <entry key="xml" value="3" />
           <entry key="yml" value="4" />
         </counts>
@@ -38,7 +36,7 @@
         <counts>
           <entry key="JSON" value="5" />
           <entry key="Markdown" value="9" />
-          <entry key="PHP" value="64" />
+          <entry key="PHP" value="66" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="4" />
@@ -50,7 +48,7 @@
           <entry key="gitignore" value="12" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
-          <entry key="php" value="1571" />
+          <entry key="php" value="1624" />
           <entry key="txt" value="65" />
           <entry key="xml" value="27" />
           <entry key="yml" value="21" />
@@ -60,7 +58,7 @@
         <counts>
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
-          <entry key="PHP" value="1571" />
+          <entry key="PHP" value="1624" />
           <entry key="PLAIN_TEXT" value="87" />
           <entry key="XML" value="27" />
           <entry key="YAML" value="21" />
@@ -86,15 +84,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/example/AgentLists.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/HelloWorld.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -115,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/AccessTokenTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="4" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="152">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -125,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/tests/unit/AgentListsTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="20" />
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding>
                 <element signature="e#94#131#0#PHP" expanded="true" />
               </folding>
@@ -133,11 +122,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="95">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -160,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/example/AccessToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="141" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="141" />
+            <state relative-caret-position="304">
+              <caret line="16" column="142" lean-forward="true" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
             </state>
           </provider>
         </entry>
@@ -198,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/eventfields/Fields.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/unit/BaseTest.php" />
-        <option value="$PROJECT_DIR$/tests/phpunit_bootstrap.php" />
         <option value="$PROJECT_DIR$/src/proxy/Base.php" />
         <option value="$PROJECT_DIR$/src/GenFieldTemplate.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
@@ -213,12 +210,13 @@
         <option value="$PROJECT_DIR$/src/requestfields/OutputFormatObj.php" />
         <option value="$PROJECT_DIR$/tests/unit/HelloWorldTest.php" />
         <option value="$PROJECT_DIR$/src/example/HelloWorld.php" />
-        <option value="$PROJECT_DIR$/src/example/AccessToken.php" />
         <option value="$PROJECT_DIR$/src/example/AgentLists.php" />
         <option value="$PROJECT_DIR$/tests/unit/AccessTokenTest.php" />
         <option value="$PROJECT_DIR$/tests/unit/AgentListsTest.php" />
         <option value="$PROJECT_DIR$/accounts.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/tests/phpunit_bootstrap.php" />
+        <option value="$PROJECT_DIR$/src/example/AccessToken.php" />
       </list>
     </option>
   </component>
@@ -248,6 +246,17 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +306,7 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
-      <workItem from="1538968750788" duration="12982000" />
+      <workItem from="1538968750788" duration="13484000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -310,7 +319,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13107000" />
+    <option name="totallyTimeSpent" value="13609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -415,13 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -546,17 +548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/AccessTokenTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/AgentListsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="20" />
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="e#94#131#0#PHP" expanded="true" />
           </folding>
@@ -570,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/example/AccessToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="141" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -586,8 +574,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="95">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/yaml/yaml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/AccessTokenTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/AccessToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="142" lean-forward="true" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
         </state>
       </provider>
     </entry>
