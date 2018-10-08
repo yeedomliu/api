@@ -39,7 +39,7 @@ class GenField
             }
             $name = trim($row['name']);
             $desc = trim($row['desc']);
-            $ucfirstName = Inflector::camelize($name);
+            $ucfirstName = Base::camelize($name);
             $name = lcfirst($ucfirstName);
             $result = require __DIR__ . '/GenFieldTemplate.php';
             file_put_contents("{$path}/{$ucfirstName}.php", $result);

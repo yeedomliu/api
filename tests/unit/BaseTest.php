@@ -15,10 +15,6 @@ class BaseTest extends \PHPUnit\Framework\TestCase
 
     }
 
-    public function testEventStart() {
-
-    }
-
     public function testExcludeFields() {
 
     }
@@ -32,14 +28,6 @@ class BaseTest extends \PHPUnit\Framework\TestCase
     }
 
     public function testRequestHandle() {
-
-    }
-
-    public function testEventException() {
-
-    }
-
-    public function testEventAfter() {
 
     }
 
@@ -60,10 +48,6 @@ class BaseTest extends \PHPUnit\Framework\TestCase
     }
 
     public function testGetRequestObj() {
-
-    }
-
-    public function testEventBefore() {
 
     }
 

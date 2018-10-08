@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/CurlOptions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Exception.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Fields.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Method.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Result.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Status.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventfields/Url.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenField.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenFieldTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenFieldTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/BaseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/BaseTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +28,7 @@
           <entry key="gitignore" value="2" />
           <entry key="json" value="4" />
           <entry key="md" value="6" />
-          <entry key="php" value="12" />
+          <entry key="php" value="15" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -45,7 +37,7 @@
         <counts>
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="6" />
-          <entry key="PHP" value="12" />
+          <entry key="PHP" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -56,7 +48,7 @@
           <entry key="gitignore" value="8" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
-          <entry key="php" value="42" />
+          <entry key="php" value="82" />
           <entry key="txt" value="11" />
           <entry key="xml" value="17" />
         </counts>
@@ -65,7 +57,7 @@
         <counts>
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
-          <entry key="PHP" value="42" />
+          <entry key="PHP" value="82" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="XML" value="17" />
         </counts>
@@ -96,17 +88,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/BaseTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="98">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GenFieldTemplate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GenField.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
               <folding>
                 <element signature="e#33#78#0#PHP" expanded="true" />
               </folding>
@@ -126,6 +136,7 @@
       <find>wii\plugin\api</find>
       <find>ev</find>
       <find>event</find>
+      <find>namespace</find>
     </findStrings>
     <replaceStrings>
       <replace>yeedomliu\api</replace>
@@ -146,10 +157,12 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/phpunit_bootstrap.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tests/unit/BaseTest.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Request.php" />
         <option value="$PROJECT_DIR$/src/Base.php" />
+        <option value="$PROJECT_DIR$/tests/unit/BaseTest.php" />
+        <option value="$PROJECT_DIR$/src/GenFieldTemplate.php" />
+        <option value="$PROJECT_DIR$/src/GenField.php" />
       </list>
     </option>
   </component>
@@ -184,11 +197,6 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
@@ -271,7 +279,7 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
-      <workItem from="1538968750788" duration="3011000" />
+      <workItem from="1538968750788" duration="3156000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -284,7 +292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3136000" />
+    <option name="totallyTimeSpent" value="3281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -421,18 +429,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/BaseTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="98">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GenFieldTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="280">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
           <folding>
             <element signature="e#33#78#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GenField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
         </state>
       </provider>
     </entry>
