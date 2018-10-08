@@ -12,9 +12,8 @@ class Json extends Base
 
     public function handle($data) {
         try {
-            $return = \wii\helpers\Json::decode($data);
+            $return = json_decode($data, true);
         } catch (\Exception $e) {
-            \Wii::error("解析json异常[{$e->getMessage()}],内容[{$data}]");
             throw $e;
         }
 

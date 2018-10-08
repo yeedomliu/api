@@ -139,6 +139,8 @@ class Request
                 }
             }
 
+            $return = $this->getOutputFormatObj()->handle($return);
+
             if ($this->getCacheTime()) {
                 $this->getCacheObj()->set($cacheKey, $return);
             }
