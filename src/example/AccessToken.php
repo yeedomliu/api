@@ -3,7 +3,6 @@
 namespace yeedomliu\api\example;
 
 use yeedomliu\api\Base;
-use yeedomliu\api\outputformat\Json;
 
 class AccessToken extends Base
 {

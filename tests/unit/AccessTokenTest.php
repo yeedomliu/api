@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yeedomliu
- * Date: 2018/10/9
- * Time: 5:29 AM
- */
 
 use yeedomliu\api\example\AccessToken;
 
