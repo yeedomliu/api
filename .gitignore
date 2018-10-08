@@ -1,0 +1,9 @@
+.*
+!.gitignore
+config/development-local.conf.php
+config/mode.php
+runtime/
+vendor/
+web/assets/
+tmp/
+nohup.out
