@@ -2,6 +2,11 @@
 
 use yeedomliu\api\example\HelloWorld;
 
+/**
+ * Class GetfieldsTest
+ *
+ * getFields和defaultGetFields会影响请求的uri地址，像post请求不会对请求body产生影响
+ */
 class GetfieldsTest extends \PHPUnit\Framework\TestCase
 {
 
