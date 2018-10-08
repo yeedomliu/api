@@ -101,7 +101,7 @@ namespace app\controllers;
 
 use app\models\workwx\AccessToken;
 
-class WorkwechatController extends \wii\web\Controller
+class WorkwechatController extends \yii\web\Controller
 {
 
     public function actionAccesstoken() {
@@ -161,7 +161,7 @@ namespace app\controllers;
 
 use app\models\workwx\AgentLists;
 
-class WorkwechatController extends \wii\web\Controller
+class WorkwechatController extends \yii\web\Controller
 {
 
     public function actionAgentlists() {
