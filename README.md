@@ -521,33 +521,6 @@ public function jsonEncodeFields() {
 
 > [字段json_encode提交视频](http://v.qq.com/x/page/r0659nkf114.html)
 
-### 事件机制
-
-请求封装类提供了请求的各种事件供子类自定义实现，从而实现了灵活的扩展，并且不需要修改现有代码。
-
-提供了4类事件：
-
-* 请求前置事件`eventRequestBefore`
-* 请求后置事件`eventRequestAfter`
-* 请求异常事件`eventRequestException`
-* 请求进入事件`eventRequestStart`
-
-
-```php
-public function eventRequestBefore() {
-    parent::eventRequestBefore();
-    $this->forceAddEvent(Request::EVENT_REQUEST_BEFORE, function (Event $event) {
-        echo '<pre>';
-        print_r("获取应用前置请求事件：");
-        print_r($event->getUrl());
-        echo '</pre>';
-    });
-    return $this;
-}
-```
-
-> [事件机制视频](https://v.qq.com/x/page/x0659mvvz58.html)
-
 ### 单独调试一个或多个接口
 
 以往，我们在调试一个接口的时候有可能会影响到其它接口，接口请求提供了请求前缀方法，可以实现单独高度一个或一类接口，但是其它的接口是不受影响的。

@@ -2,7 +2,6 @@
 
 namespace yeedomliu\api;
 
-use wii\helpers\Inflector;
 use yeedomliu\api\fieldstyle\LcfirstCamelize;
 use yeedomliu\api\requestfields\CacheKey;
 use yeedomliu\api\requestfields\CacheTime;
@@ -95,78 +94,20 @@ class Base
     }
 
     /**
-     * 请求开始
+     * Returns given word as CamelCased.
      *
-     * @return $this
-     */
-    public function eventStart() {
-        \yii\base\Event::off(Request::className(), Request::EVENT_REQUEST_START);
-
-        return $this;
-    }
-
-    /**
-     * 请求事件before处理
-     * 1.https请求处理
+     * Converts a word like "send_email" to "SendEmail". It
+     * will remove non alphanumeric character from the word, so
+     * "who's online" will be converted to "WhoSOnline".
      *
-     * @return $this
-     */
-    public function eventBefore() {
-        \yii\base\Event::off(Request::className(), Request::EVENT_REQUEST_BEFORE);
-        \yii\base\Event::on(Request::className(), Request::EVENT_REQUEST_BEFORE, function (Event $event) {
-            if (stripos($event->getUrl(), "https://") !== false) {
-                $event->getRequestObj()->addCurlOption(CURLOPT_SSL_VERIFYPEER, false)->addCurlOption(CURLOPT_SSL_VERIFYHOST, false)->addCurlOption(CURLOPT_SSLVERSION, 1);
-            }
-        });
-
-        return $this;
-    }
-
-    /**
-     * 请求事件after处理
-     * 1.记录日志
+     * @see variablize()
      *
-     * @return $this
-     */
-    public function eventAfter() {
-        \yii\base\Event::off(Request::className(), Request::EVENT_REQUEST_AFTER);
-        \yii\base\Event::on(Request::className(), Request::EVENT_REQUEST_AFTER, function (Event $event) {
-            \Yii::info([
-                           'url'     => $event->getUrl(),
-                           'fields'  => $event->getFields(),
-                           'method'  => $event->getMethod(),
-                           'result'  => $event->getResult(),
-                           'header'  => $event->getHeaders(),
-                           'options' => $event->getCurlOptions(),
-                           'status'  => $event->getStatus(),
-                       ], 'request.result');
-        });
-
-        return $this;
-    }
-
-    /**
-     * 请求事件异常处理
+     * @param string $word the word to CamelCase
      *
-     * @return $this
+     * @return string
      */
-    public function eventException() {
-        \yii\base\Event::off(Request::className(), Request::EVENT_REQUEST_EXCEPTION);
-        \yii\base\Event::on(Request::className(), Request::EVENT_REQUEST_EXCEPTION, function (Event $event) {
-            \Yii::info([
-                           'url'            => $event->getUrl(),
-                           'fields'         => $event->getFields(),
-                           'method'         => $event->getMethod(),
-                           'result'         => $event->getResult(),
-                           'options'        => $event->getCurlOptions(),
-                           'header'         => $event->getHeaders(),
-                           'status'         => $event->getStatus(),
-                           'exception_msg'  => $event->getException()->getMessage(),
-                           'exception_code' => $event->getException()->getCode(),
-                       ], 'request.exception');
-        });
-
-        return $this;
+    public static function camelize($word) {
+        return str_replace(' ', '', ucwords(preg_replace('/[^A-Za-z0-9]+/', ' ', $word)));
     }
 
     /**
@@ -200,7 +141,7 @@ class Base
                     }
                     foreach ($props as $prop) {
                         $name = $this->getFieldNameHandleObj()->handle($prop->name);
-                        $method = 'get' . Inflector::camelize($prop->name);
+                        $method = 'get' . self::camelize($prop->name);
                         $fields[ $name ] = call_user_func_array([$this, $method], []);
                     }
                 }
@@ -260,11 +201,6 @@ class Base
         // 把trait的属性都转换为字段名
         {
             $fields = $this->getHandledFields();
-        }
-
-        // 事件处理
-        {
-            $this->eventStart()->eventBefore()->eventAfter()->eventException();
         }
 
         // 请求处理

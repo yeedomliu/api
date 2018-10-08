@@ -36,14 +36,6 @@ class Request extends Component
 
     const METHOD_POST = 'post';
 
-    const EVENT_REQUEST_START = 'request_start';
-
-    const EVENT_REQUEST_BEFORE = 'request_before';
-
-    const EVENT_REQUEST_AFTER = 'request_after';
-
-    const EVENT_REQUEST_EXCEPTION = 'request_exception';
-
     /**
      * 获取完整请求路径
      *
@@ -90,8 +82,6 @@ class Request extends Component
      */
     public function request() {
         try {
-            $this->trigger(self::EVENT_REQUEST_START);
-
             // 请求字段处理
             {
                 $url = $this->getFullUrl();
@@ -105,7 +95,6 @@ class Request extends Component
 
             // 请求处理
             {
-                $event = (new Event())->setUrl($url)->setFields($fields)->setMethod($this->getMethod())->setCurlOptions($this->getCurlOptions())->setHeaders($this->getHeaders())->setRequestObj($this);
                 $cacheKey = $this->getCacheKey();
                 \Wii::info("request[{$url}] cache key[{$cacheKey}]");
                 if ($this->getCacheTime()) {
@@ -116,7 +105,6 @@ class Request extends Component
 
                     return $return;
                 } else {
-                    $this->trigger(self::EVENT_REQUEST_BEFORE, $event);
                     if ($this->getProxyClass()) {
                         $return = $this->getProxyClass()
                                        ->setPrefix($this->getPrefix())
@@ -148,36 +136,15 @@ class Request extends Component
                         $return = curl_exec($ch);
                     }
                     $status = curl_getinfo($ch);
-                    $event->setStatus($status);
-
-                    $this->trigger(self::EVENT_REQUEST_AFTER, $event->setResult($return));
                 }
             }
 
-            // 异常处理
-            {
-                //                if ($return === false) {
-                //                    throw new \Exception("网络错误");
-                //                }
-
-                //                if ($status && intval($status["http_code"]) != 200) {
-                //                    throw new \Exception("unexpected http code " . intval($status["http_code"]));
-                //                }
-
-                $return = $this->getOutputFormatObj()->handle($return);
-                //                if (is_array($return)) {
-                //                    if (0 != $return['errcode']) {
-                //                        throw new \Exception("调用接口出现错误[{$return['errmsg']}]");
-                //                    }
-                //                }
-            }
             if ($this->getCacheTime()) {
                 \Wii::app()->cache->set($cacheKey, $return);
             }
 
             return $return;
         } catch (\Exception $e) {
-            $this->trigger(self::EVENT_REQUEST_EXCEPTION, $event->setException($e));
             throw $e;
         }
     }
