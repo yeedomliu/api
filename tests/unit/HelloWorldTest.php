@@ -12,9 +12,8 @@ class HelloWorldTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testHelloworld() {
-        echo '<pre>';
-        print_r((new HelloWorld())->start());
-        echo '</pre>';
-        exit();
+        $actual = preg_replace('/"RequestId":".+?"/', '"RequestId":""', (new HelloWorld())->start());
+        $excepted = '{"Response":{"Error":{"Code":"InvalidParameter","Message":"Url key and value should be splited by `=`."},"RequestId":""}}';
+        $this->assertEquals($excepted, $actual);
     }
 }
