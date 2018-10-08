@@ -74,6 +74,10 @@ class Request
         return $this->cacheKey ? $this->cacheKey : "{$this->getFullUrl()}{$this->isPostMethod()}";
     }
 
+    public function getCacheObj() {
+        return null;
+    }
+
     /**
      * 执行请求
      *
@@ -95,13 +99,10 @@ class Request
             // 请求处理
             {
                 $cacheKey = $this->getCacheKey();
-                \Wii::info("request[{$url}] cache key[{$cacheKey}]");
                 if ($this->getCacheTime()) {
-                    $return = \Wii::app()->cache->get($cacheKey);
+                    $return = $this->getCacheObj()->get($cacheKey);
                 }
                 if ( ! empty($return)) {
-                    \Wii::info("request[{$url}] from cache");
-
                     return $return;
                 } else {
                     if ($this->getProxyClass()) {
@@ -139,7 +140,7 @@ class Request
             }
 
             if ($this->getCacheTime()) {
-                \Wii::app()->cache->set($cacheKey, $return);
+                $this->getCacheObj()->set($cacheKey, $return);
             }
 
             return $return;

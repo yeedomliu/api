@@ -2,8 +2,6 @@
 
 namespace yeedomliu\api;
 
-use wii\helpers\Inflector;
-
 /**
  * 生成字段类
  */
