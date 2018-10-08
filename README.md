@@ -77,7 +77,7 @@ Array
 ```php
 namespace app\models\workwx;
 
-use wii\interfaces\Base;
+use yeedomliu\api\Base;
 
 /**
  * 获取access_token
@@ -137,7 +137,7 @@ Array
 ```php
 namespace app\models\workwx;
 
-use wii\interfaces\Base;
+use yeedomliu\api\Base;
 
 /**
  * 获取应用列表
