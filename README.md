@@ -581,3 +581,7 @@ public function eventRequestBefore() {
 * 代码量减少50%以上
 * 灵活的扩展机制
 * 只需要在真正的逻辑
+
+
+
+
