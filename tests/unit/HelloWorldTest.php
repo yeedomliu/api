@@ -11,7 +11,7 @@ class HelloWorldTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($excepted, $actual);
     }
 
-    public function testHelloworldarray() {
+    public function testOutputformatjson() {
         $actual = (new HelloWorld())->setOutputFormatObj(new \yeedomliu\api\outputformat\Json())->start();
         $this->assertTrue(is_array($actual));
         $this->assertEquals('Url key and value should be splited by `=`.', $actual['Response']['Error']['Message']);
