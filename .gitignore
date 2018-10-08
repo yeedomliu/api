@@ -8,4 +8,5 @@ web/assets/
 tmp/
 nohup.out
 .idea
+.idea/*
 coverage

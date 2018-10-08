@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="" />
+    <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/HelloWorldTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/HelloWorldTest.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +25,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="json" value="5" />
           <entry key="md" value="7" />
           <entry key="php" value="30" />
@@ -34,7 +38,7 @@
           <entry key="JSON" value="5" />
           <entry key="Markdown" value="7" />
           <entry key="PHP" value="30" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="1" />
         </counts>
@@ -42,7 +46,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="gitignore" value="8" />
+          <entry key="gitignore" value="11" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
           <entry key="php" value="474" />
@@ -55,7 +59,7 @@
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
           <entry key="PHP" value="474" />
-          <entry key="PLAIN_TEXT" value="55" />
+          <entry key="PLAIN_TEXT" value="58" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -85,11 +89,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/HelloWorldTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -154,7 +167,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/eventfields/Fields.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Base.php" />
         <option value="$PROJECT_DIR$/tests/unit/BaseTest.php" />
@@ -167,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/Request.php" />
         <option value="$PROJECT_DIR$/src/GenField.php" />
         <option value="$PROJECT_DIR$/tests/unit/HelloWorldTest.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -259,7 +272,7 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
-      <workItem from="1538968750788" duration="5281000" />
+      <workItem from="1538968750788" duration="5314000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -272,7 +285,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5406000" />
+    <option name="totallyTimeSpent" value="5439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -349,13 +362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -476,7 +482,14 @@
     <entry file="file://$PROJECT_DIR$/tests/unit/HelloWorldTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

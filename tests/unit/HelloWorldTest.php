@@ -16,5 +16,5 @@ class HelloWorldTest extends \PHPUnit\Framework\TestCase
         $excepted = '{"Response":{"Error":{"Code":"InvalidParameter","Message":"Url key and value should be splited by `=`."},"RequestId":""}}';
         $this->assertEquals($excepted, $actual);
     }
-    
+
 }
