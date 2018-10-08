@@ -46,10 +46,7 @@ class Request
         } else {
             $url = $this->getPrefix() . $this->getUrl();
             if ( ! $this->isPostMethod()) {
-                $fields = $this->getFields();
-                $fieldString = is_array($fields) ? http_build_query($fields) : $fields;
-                $url .= preg_match('/\?/is', $url) ? "&" : "?";
-                $url .= $fieldString;
+                $url .= (preg_match('/\?/is', $url) ? "&" : "?") . (is_array($this->getFields()) ? http_build_query($this->getFields()) : $this->getFields());
             }
         }
 
