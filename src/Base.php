@@ -9,6 +9,7 @@ use yeedomliu\api\requestfields\CurlOptions;
 use yeedomliu\api\requestfields\DefaultGetFields;
 use yeedomliu\api\requestfields\DefaultPostFields;
 use yeedomliu\api\requestfields\ExcludeEmptyField;
+use yeedomliu\api\requestfields\ExcludeFields;
 use yeedomliu\api\requestfields\FullUrl;
 use yeedomliu\api\requestfields\GetFields;
 use yeedomliu\api\requestfields\HeaderGetterSetter;
@@ -23,7 +24,7 @@ use yeedomliu\api\requestfields\UrlPrefix;
 class Base
 {
 
-    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery;
+    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeFields, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery;
 
     /**
      * 初始化操作
@@ -151,8 +152,8 @@ class Base
         // 合并默认post/post字段/自定义字段，排除字段
         {
             $fields = array_merge($fields, $this->getDefaultPostFields(), $this->getPostFields(), $this->customFields());
-            if ($this->excludeFields()) {
-                foreach ($this->excludeFields() as $excludeField) {
+            if ($this->getExcludeFields()) {
+                foreach ($this->getExcludeFields() as $excludeField) {
                     unset($fields[ $excludeField ]);
                 }
             }
@@ -209,7 +210,7 @@ class Base
                                  ->setOutputFormatObj($this->getOutputFormatObj())
                                  ->setJsonEncodeFields($this->jsonEncodeFields())
                                  ->setFields($fields)
-                                 ->setExcludeFields($this->excludeFields())
+                                 ->setExcludeFields($this->getExcludeFields())
                                  ->setUrl($this->getUri())
                                  ->setProxyClass($this->getProxyClass())
                                  ->setMethod($this->isPostRequest() ? Request::METHOD_POST : Request::METHOD_GET)
@@ -250,15 +251,6 @@ class Base
      * @return array
      */
     public function customFields() {
-        return [];
-    }
-
-    /**
-     * 排除字段
-     *
-     * @return array
-     */
-    public function excludeFields() {
         return [];
     }
 
