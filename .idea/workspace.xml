@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenField.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/CurlOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/CurlOptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Method.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventfields/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventfields/Url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldstyle/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldstyle/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldstyle/Camelize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldstyle/Camelize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldstyle/LcfirstCamelize.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldstyle/LcfirstCamelize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldstyle/Underscore.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldstyle/Underscore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outputformat/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/outputformat/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outputformat/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/outputformat/Json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outputformat/Raw.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/outputformat/Raw.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proxy/BaiduTranslate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/proxy/BaiduTranslate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proxy/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/proxy/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/CacheKey.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/CacheKey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/CacheTime.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/CacheTime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/ConnectTimeout.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/ConnectTimeout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/CurlOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/CurlOptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/DefaultGetFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/DefaultGetFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/DefaultPostFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/DefaultPostFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/ExcludeEmptyField.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/ExcludeEmptyField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/ExcludeFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/ExcludeFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/FullUrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/FullUrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/GetFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/GetFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/HeaderGetterSetter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/HeaderGetterSetter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Headers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Headers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/HttpBuildQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/HttpBuildQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/JsonEncodeFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/JsonEncodeFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Method.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/OutputFormatObj.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/OutputFormatObj.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/PostFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/PostFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/PostRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Prefix.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Prefix.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/ProxyClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/ProxyClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Timeout.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Timeout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/Url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requestfields/UrlPrefix.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/UrlPrefix.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,48 +60,72 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="json" value="1" />
           <entry key="md" value="4" />
-          <entry key="php" value="2" />
+          <entry key="php" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JSON" value="1" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="2" />
+          <entry key="PHP" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="json" value="12" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="12" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="247">
-                <caret line="13" lean-forward="true" selection-end-line="582" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eventfields/CurlOptions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eventfields/Fields.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wii\plugin\api</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>yeedomliu\api</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +134,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/eventfields/Fields.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -89,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,11 +171,16 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="eventfields" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,17 +217,26 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
+      <workItem from="1538968750788" duration="334000" />
     </task>
+    <task id="LOCAL-00001" summary="push">
+      <created>1538968795360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538968795361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125000" />
+    <option name="totallyTimeSpent" value="459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -179,6 +263,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="push" />
+    <option name="LAST_COMMIT_MESSAGE" value="push" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/api/proxy/Base.php" />
     <entry file="file://$PROJECT_DIR$/src/eventfields/Url.php">
@@ -188,21 +276,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="13" lean-forward="true" selection-end-line="582" selection-end-column="11" />
+          <first_editor relative-caret-position="245">
+            <caret line="552" column="20" lean-forward="true" selection-start-line="552" selection-start-column="20" selection-end-line="552" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="247">
+            <caret line="13" selection-end-line="582" selection-end-column="11" />
+          </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventfields/CurlOptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventfields/Fields.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>

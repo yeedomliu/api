@@ -1,25 +1,25 @@
 <?php
 
-namespace wii\plugin\api;
+namespace yeedomliu\api;
 
 use wii\base\Component;
-use wii\plugin\api\requestfields\CacheKey;
-use wii\plugin\api\requestfields\CacheTime;
-use wii\plugin\api\requestfields\ConnectTimeout;
-use wii\plugin\api\requestfields\ExcludeEmptyField;
-use wii\plugin\api\requestfields\ExcludeFields;
-use wii\plugin\api\requestfields\Fields;
-use wii\plugin\api\requestfields\FullUrl;
-use wii\plugin\api\requestfields\Headers;
-use wii\plugin\api\requestfields\HttpBuildQuery;
-use wii\plugin\api\requestfields\JsonEncodeFields;
-use wii\plugin\api\requestfields\Method;
-use wii\plugin\api\requestfields\CurlOptions;
-use wii\plugin\api\requestfields\Prefix;
-use wii\plugin\api\requestfields\ProxyClass;
-use wii\plugin\api\requestfields\OutputFormatObj;
-use wii\plugin\api\requestfields\Timeout;
-use wii\plugin\api\requestfields\Url;
+use yeedomliu\api\requestfields\CacheKey;
+use yeedomliu\api\requestfields\CacheTime;
+use yeedomliu\api\requestfields\ConnectTimeout;
+use yeedomliu\api\requestfields\ExcludeEmptyField;
+use yeedomliu\api\requestfields\ExcludeFields;
+use yeedomliu\api\requestfields\Fields;
+use yeedomliu\api\requestfields\FullUrl;
+use yeedomliu\api\requestfields\Headers;
+use yeedomliu\api\requestfields\HttpBuildQuery;
+use yeedomliu\api\requestfields\JsonEncodeFields;
+use yeedomliu\api\requestfields\Method;
+use yeedomliu\api\requestfields\CurlOptions;
+use yeedomliu\api\requestfields\Prefix;
+use yeedomliu\api\requestfields\ProxyClass;
+use yeedomliu\api\requestfields\OutputFormatObj;
+use yeedomliu\api\requestfields\Timeout;
+use yeedomliu\api\requestfields\Url;
 
 /**
  * 接口请求

@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * 设置默认的post请求参数
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait DefaultPostFields
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * 代理类trait
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait ProxyClass
 {
@@ -13,19 +13,19 @@ trait ProxyClass
     /**
      * 请求前缀
      *
-     * @var \wii\plugin\api\proxy\Base
+     * @var \yeedomliu\api\proxy\Base
      */
     protected $proxyClass;
 
     /**
-     * @return \wii\plugin\api\proxy\Base
+     * @return \yeedomliu\api\proxy\Base
      */
     public function getProxyClass() {
         return $this->proxyClass;
     }
 
     /**
-     * @param \wii\plugin\api\proxy\Base $proxyClass
+     * @param \yeedomliu\api\proxy\Base $proxyClass
      *
      * @return $this
      */

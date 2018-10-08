@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * curl请求选项
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait CurlOptions
 {

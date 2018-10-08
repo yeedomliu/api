@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\outputformat;
+namespace yeedomliu\api\outputformat;
 
 /**
  * json格式化类
  *
- * @package wii\plugin\api\outputformat
+ * @package yeedomliu\api\outputformat
  */
 class Json extends Base
 {

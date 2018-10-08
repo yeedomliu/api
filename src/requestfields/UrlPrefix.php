@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * url请求前缀
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait UrlPrefix
 {

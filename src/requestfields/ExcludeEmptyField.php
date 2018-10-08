@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * 是否排除空字段，有些请求地址空字段会影响到签名算法
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait ExcludeEmptyField
 {

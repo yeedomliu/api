@@ -1,13 +1,13 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 /**
  * http_build_query处理
  *
  * 如果提交多维数组需要设置为true对请求的字段进行处理
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait HttpBuildQuery
 {

@@ -1,25 +1,25 @@
 <?php
 
-namespace wii\plugin\api;
+namespace yeedomliu\api;
 
 use wii\helpers\Inflector;
-use wii\plugin\api\fieldstyle\LcfirstCamelize;
-use wii\plugin\api\requestfields\CacheKey;
-use wii\plugin\api\requestfields\CacheTime;
-use wii\plugin\api\requestfields\CurlOptions;
-use wii\plugin\api\requestfields\DefaultGetFields;
-use wii\plugin\api\requestfields\DefaultPostFields;
-use wii\plugin\api\requestfields\ExcludeEmptyField;
-use wii\plugin\api\requestfields\FullUrl;
-use wii\plugin\api\requestfields\GetFields;
-use wii\plugin\api\requestfields\HeaderGetterSetter;
-use wii\plugin\api\requestfields\HttpBuildQuery;
-use wii\plugin\api\requestfields\OutputFormatObj;
-use wii\plugin\api\requestfields\PostFields;
-use wii\plugin\api\requestfields\PostRequest;
-use wii\plugin\api\requestfields\ProxyClass;
-use wii\plugin\api\requestfields\Url;
-use wii\plugin\api\requestfields\UrlPrefix;
+use yeedomliu\api\fieldstyle\LcfirstCamelize;
+use yeedomliu\api\requestfields\CacheKey;
+use yeedomliu\api\requestfields\CacheTime;
+use yeedomliu\api\requestfields\CurlOptions;
+use yeedomliu\api\requestfields\DefaultGetFields;
+use yeedomliu\api\requestfields\DefaultPostFields;
+use yeedomliu\api\requestfields\ExcludeEmptyField;
+use yeedomliu\api\requestfields\FullUrl;
+use yeedomliu\api\requestfields\GetFields;
+use yeedomliu\api\requestfields\HeaderGetterSetter;
+use yeedomliu\api\requestfields\HttpBuildQuery;
+use yeedomliu\api\requestfields\OutputFormatObj;
+use yeedomliu\api\requestfields\PostFields;
+use yeedomliu\api\requestfields\PostRequest;
+use yeedomliu\api\requestfields\ProxyClass;
+use yeedomliu\api\requestfields\Url;
+use yeedomliu\api\requestfields\UrlPrefix;
 
 class Base
 {
@@ -65,9 +65,9 @@ class Base
     /**
      * 自定义处理request对象
      *
-     * @param \wii\plugin\api\Request $requestObj
+     * @param \yeedomliu\api\Request $requestObj
      *
-     * @return \wii\plugin\api\Request
+     * @return \yeedomliu\api\Request
      */
     public function requestHandle(Request $requestObj) {
         return $requestObj;
@@ -76,7 +76,7 @@ class Base
     /**
      * 获取request对象
      *
-     * @return \wii\plugin\api\Request
+     * @return \yeedomliu\api\Request
      */
     public function getRequestObj() {
         $requestObj = (new Request());
@@ -88,7 +88,7 @@ class Base
     /**
      * 对字段名字进行处理（可以进行不同风格的转换）
      *
-     * @return \wii\plugin\api\fieldstyle\LcfirstCamelize
+     * @return \yeedomliu\api\fieldstyle\LcfirstCamelize
      */
     public function getFieldNameHandleObj() {
         return new LcfirstCamelize();

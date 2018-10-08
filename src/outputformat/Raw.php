@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\outputformat;
+namespace yeedomliu\api\outputformat;
 
 /**
  * 原始格式类
  *
- * @package wii\plugin\api\outputformat
+ * @package yeedomliu\api\outputformat
  */
 class Raw extends Base
 {

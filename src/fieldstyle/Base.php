@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\fieldstyle;
+namespace yeedomliu\api\fieldstyle;
 
 /**
  * 字段风格处理
  *
- * @package wii\plugin\api\fieldstyle
+ * @package yeedomliu\api\fieldstyle
  */
 abstract class Base
 {

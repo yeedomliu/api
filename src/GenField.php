@@ -1,6 +1,6 @@
 <?php
 
-namespace wii\plugin\api;
+namespace yeedomliu\api;
 
 use wii\helpers\Inflector;
 

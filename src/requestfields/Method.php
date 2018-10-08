@@ -1,8 +1,8 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
-use wii\plugin\api\Request;
+use yeedomliu\api\Request;
 
 trait Method
 {

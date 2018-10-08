@@ -1,15 +1,15 @@
 <?php
 
-namespace wii\plugin\api;
+namespace yeedomliu\api;
 
-use wii\plugin\api\eventfields\Exception;
-use wii\plugin\api\eventfields\Fields;
-use wii\plugin\api\eventfields\Method;
-use wii\plugin\api\eventfields\CurlOptions;
-use wii\plugin\api\eventfields\Result;
-use wii\plugin\api\eventfields\Status;
-use wii\plugin\api\eventfields\Url;
-use wii\plugin\api\requestfields\Headers;
+use yeedomliu\api\eventfields\Exception;
+use yeedomliu\api\eventfields\Fields;
+use yeedomliu\api\eventfields\Method;
+use yeedomliu\api\eventfields\CurlOptions;
+use yeedomliu\api\eventfields\Result;
+use yeedomliu\api\eventfields\Status;
+use yeedomliu\api\eventfields\Url;
+use yeedomliu\api\requestfields\Headers;
 
 /**
  * 接口请求
@@ -22,23 +22,23 @@ class Event extends \yii\base\Event
     use Fields, Method, CurlOptions, Result, Url, Status, Exception, Headers;
 
     /**
-     * @var \wii\plugin\api\Request
+     * @var \yeedomliu\api\Request
      */
     protected $requestObj;
 
     /**
-     * @return \wii\plugin\api\Request
+     * @return \yeedomliu\api\Request
      */
-    public function getRequestObj(): \wii\plugin\api\Request {
+    public function getRequestObj(): \yeedomliu\api\Request {
         return $this->requestObj;
     }
 
     /**
-     * @param \wii\plugin\api\Request $requestObj
+     * @param \yeedomliu\api\Request $requestObj
      *
      * @return $this
      */
-    public function setRequestObj(\wii\plugin\api\Request $requestObj) {
+    public function setRequestObj(\yeedomliu\api\Request $requestObj) {
         $this->requestObj = $requestObj;
 
         return $this;

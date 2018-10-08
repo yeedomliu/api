@@ -1,9 +1,9 @@
 <?php
 
-namespace wii\plugin\api\proxy;
+namespace yeedomliu\api\proxy;
 
 use linslin\yii2\curl\Curl;
-use wii\plugin\api\outputformat\Raw;
+use yeedomliu\api\outputformat\Raw;
 
 class BaiduTranslate extends Base
 {

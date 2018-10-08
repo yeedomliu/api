@@ -1,6 +1,6 @@
 <?php
 
-namespace wii\plugin\api\fieldstyle;
+namespace yeedomliu\api\fieldstyle;
 
 use wii\helpers\Inflector;
 
@@ -9,7 +9,7 @@ use wii\helpers\Inflector;
  *
  * 把 "CamelCased" 转换成 "underscored_word"
  *
- * @package wii\plugin\api\fieldstyle
+ * @package yeedomliu\api\fieldstyle
  */
 class Underscore extends Base
 {

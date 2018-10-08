@@ -1,13 +1,13 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
-use wii\plugin\api\outputformat\Raw;
+use yeedomliu\api\outputformat\Raw;
 
 /**
  * 接口渲染处理对象，可以是json/raw或可以快速扩展其它类型
  *
- * @package wii\plugin\api\requestfields
+ * @package yeedomliu\api\requestfields
  */
 trait OutputFormatObj
 {
@@ -15,19 +15,19 @@ trait OutputFormatObj
     /**
      * 返回结果处理对象
      *
-     * @var \wii\plugin\api\outputformat\Base
+     * @var \yeedomliu\api\outputformat\Base
      */
     protected $outputFormatObj = null;
 
     /**
-     * @return \wii\plugin\api\outputformat\Base
+     * @return \yeedomliu\api\outputformat\Base
      */
     public function getOutputFormatObj() {
         return empty($this->outputFormatObj) ? new Raw() : $this->outputFormatObj;
     }
 
     /**
-     * @param \wii\plugin\api\outputformat\Base $outputFormatObj
+     * @param \yeedomliu\api\outputformat\Base $outputFormatObj
      *
      * @return $this
      */

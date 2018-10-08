@@ -1,11 +1,11 @@
 <?php
 
-namespace wii\plugin\api\outputformat;
+namespace yeedomliu\api\outputformat;
 
 /**
  * 返回结果处理基类
  *
- * @package wii\plugin\api\outputformat
+ * @package yeedomliu\api\outputformat
  */
 abstract class Base
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace wii\plugin\api\fieldstyle;
+namespace yeedomliu\api\fieldstyle;
 
 use wii\helpers\Inflector;
 
@@ -9,7 +9,7 @@ use wii\helpers\Inflector;
  *
  * 类似把 "send_email" 转换成 "SendEmail"
  *
- * @package wii\plugin\api\fieldstyle
+ * @package yeedomliu\api\fieldstyle
  */
 class Camelize extends Base
 {

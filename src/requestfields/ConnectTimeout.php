@@ -1,6 +1,6 @@
 <?php
 
-namespace wii\plugin\api\requestfields;
+namespace yeedomliu\api\requestfields;
 
 trait ConnectTimeout
 {
