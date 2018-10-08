@@ -2,7 +2,7 @@
 
 namespace yeedomliu\api\requestfields;
 
-use yeedomliu\api\outputformat\Raw;
+use yeedomliu\api\outputformat\Json;
 
 /**
  * 接口渲染处理对象，可以是json/raw或可以快速扩展其它类型
@@ -23,7 +23,7 @@ trait OutputFormatObj
      * @return \yeedomliu\api\outputformat\Base
      */
     public function getOutputFormatObj() {
-        return empty($this->outputFormatObj) ? new Raw() : $this->outputFormatObj;
+        return empty($this->outputFormatObj) ? new Json() : $this->outputFormatObj;
     }
 
     /**
