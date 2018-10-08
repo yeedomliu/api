@@ -26,7 +26,7 @@
           <entry key="gitignore" value="1" />
           <entry key="json" value="3" />
           <entry key="md" value="5" />
-          <entry key="php" value="6" />
+          <entry key="php" value="7" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -35,7 +35,7 @@
         <counts>
           <entry key="JSON" value="3" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="6" />
+          <entry key="PHP" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -46,6 +46,7 @@
           <entry key="gitignore" value="7" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
+          <entry key="php" value="9" />
           <entry key="txt" value="4" />
           <entry key="xml" value="17" />
         </counts>
@@ -54,6 +55,7 @@
         <counts>
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
+          <entry key="PHP" value="9" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="XML" value="17" />
         </counts>
@@ -63,13 +65,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="778">
-                <caret line="587" lean-forward="true" selection-start-line="587" selection-end-line="587" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -95,6 +94,7 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tests/phpunit_bootstrap.php" />
       </list>
     </option>
   </component>
@@ -125,6 +125,11 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -139,6 +144,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -167,7 +173,7 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
-      <workItem from="1538968750788" duration="1186000" />
+      <workItem from="1538968750788" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -180,7 +186,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1311000" />
+    <option name="totallyTimeSpent" value="1447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -295,6 +301,13 @@
             <caret line="587" lean-forward="true" selection-start-line="587" selection-end-line="587" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
