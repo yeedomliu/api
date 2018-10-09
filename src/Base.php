@@ -50,10 +50,9 @@ class Base
         $url = $this->url();
         $getFieldArray = array_merge($this->getDefaultGetFields(), $this->getGetFields());
         if ($getFieldArray) {
-            $keyValues = [];
-            foreach ($getFieldArray as $name => $value) {
-                $keyValues[] = "{$name}={$value}";
-            }
+            $keyValues = array_map(function ($name, $value) {
+                return "{$name}={$value}";
+            }, array_keys($getFieldArray), $getFieldArray);
             if ($keyValues) {
                 $url .= (preg_match('/\?/is', $url) ? "&" : "?") . join('&', $keyValues);
             }

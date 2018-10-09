@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +51,7 @@
           <entry key="gitignore" value="12" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
-          <entry key="php" value="2758" />
+          <entry key="php" value="2943" />
           <entry key="txt" value="65" />
           <entry key="xml" value="27" />
           <entry key="yml" value="21" />
@@ -60,7 +61,7 @@
         <counts>
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
-          <entry key="PHP" value="2758" />
+          <entry key="PHP" value="2943" />
           <entry key="PLAIN_TEXT" value="116" />
           <entry key="XML" value="27" />
           <entry key="YAML" value="21" />
@@ -85,25 +86,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="212">
+              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
               <folding>
                 <element signature="e#33#78#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Request.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#33#74#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/example/AccessToken.php" />
         <option value="$PROJECT_DIR$/tests/unit/HelloWorldTest.php" />
         <option value="$PROJECT_DIR$/tests/unit/GetfieldsTest.php" />
-        <option value="$PROJECT_DIR$/src/Base.php" />
         <option value="$PROJECT_DIR$/tests/unit/PostfieldsTest.php" />
         <option value="$PROJECT_DIR$/tests/unit/ExcludefieldsTest.php" />
         <option value="$PROJECT_DIR$/src/Request.php" />
+        <option value="$PROJECT_DIR$/src/Base.php" />
       </list>
     </option>
   </component>
@@ -268,7 +257,7 @@
       <updated>1538968337417</updated>
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
-      <workItem from="1538968750788" duration="16856000" />
+      <workItem from="1538968750788" duration="17188000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -281,7 +270,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16981000" />
+    <option name="totallyTimeSpent" value="17313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -636,22 +625,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base.php">
+    <entry file="file://$PROJECT_DIR$/src/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        <state relative-caret-position="1058">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="e#33#78#0#PHP" expanded="true" />
+            <element signature="e#33#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Request.php">
+    <entry file="file://$PROJECT_DIR$/src/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="212">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
           <folding>
-            <element signature="e#33#74#0#PHP" expanded="true" />
+            <element signature="e#33#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
