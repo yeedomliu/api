@@ -161,18 +161,15 @@ class Base
         // 排除空字段值
         {
             if ($this->isExcludeEmptyField()) {
-                foreach ($fields as $key => $value) {
-                    if (is_object($value)) {
-                        continue;
-                    }
-                    if (is_array($value)) {
-                        if (empty($value)) {
-                            unset($fields[ $key ]);
-                        }
+                $fields = array_filter($fields, function ($value) {
+                    if (is_array($value) && empty($value)) {
+                        return false;
                     } elseif (0 == strlen($value)) {
-                        unset($fields[ $key ]);
+                        return false;
                     }
-                }
+
+                    return true;
+                });
             }
         }
 

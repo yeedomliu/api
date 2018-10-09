@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +45,7 @@
           <entry key="html" value="1" />
           <entry key="json" value="6" />
           <entry key="md" value="11" />
-          <entry key="php" value="87" />
+          <entry key="php" value="89" />
           <entry key="xml" value="6" />
           <entry key="yml" value="6" />
         </counts>
@@ -56,7 +55,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
           <entry key="Markdown" value="11" />
-          <entry key="PHP" value="87" />
+          <entry key="PHP" value="89" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="6" />
           <entry key="YAML" value="6" />
@@ -64,11 +63,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="39" />
+          <entry key="dummy" value="42" />
           <entry key="gitignore" value="20" />
           <entry key="json" value="14" />
           <entry key="md" value="9" />
-          <entry key="php" value="2945" />
+          <entry key="php" value="3320" />
           <entry key="txt" value="65" />
           <entry key="xml" value="392" />
           <entry key="yml" value="101" />
@@ -78,8 +77,8 @@
         <counts>
           <entry key="JSON" value="14" />
           <entry key="Markdown" value="9" />
-          <entry key="PHP" value="2945" />
-          <entry key="PLAIN_TEXT" value="124" />
+          <entry key="PHP" value="3320" />
+          <entry key="PLAIN_TEXT" value="127" />
           <entry key="XML" value="392" />
           <entry key="YAML" value="101" />
         </counts>
@@ -109,8 +108,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
+            <state relative-caret-position="194">
+              <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="639" column="9" selection-start-line="639" selection-start-column="9" selection-end-line="639" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_9.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="668" column="9" selection-start-line="668" selection-start-column="9" selection-end-line="668" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -287,7 +304,7 @@
       <workItem from="1538968452384" duration="24000" />
       <workItem from="1538968750788" duration="26432000" />
       <workItem from="1539068774050" duration="375000" />
-      <workItem from="1539070770772" duration="30000" />
+      <workItem from="1539070770772" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -300,7 +317,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26962000" />
+    <option name="totallyTimeSpent" value="27480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -338,7 +355,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="push" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/api/proxy/Base.php" />
     <entry file="file://$PROJECT_DIR$/src/eventfields/Url.php" />
     <entry file="file://$PROJECT_DIR$/src/README.md" />
     <entry file="file://$PROJECT_DIR$/src/requestfields/CacheTime.php">
@@ -509,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="774" column="10" selection-start-line="774" selection-start-column="10" selection-end-line="774" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/ExcludefieldsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -597,10 +606,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="639" column="9" selection-start-line="639" selection-start-column="9" selection-end-line="639" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_9.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="668" column="9" selection-start-line="668" selection-start-column="9" selection-end-line="668" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
+        <state relative-caret-position="194">
+          <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
         </state>
       </provider>
     </entry>
