@@ -15,5 +15,5 @@ notifications:
   email:
     recipients:
       - 36749952@qq.com
-      on_success: never
+      on_success: always
       on_failure: always
