@@ -5,9 +5,9 @@ php:
   - 7.2
 
 install:
+  - echo $hello
   - composer install -vvv --profile --prefer-dist
 
 script:
   - ./vendor/bin/phpunit -c phpunit.xml --coverage-text
-  - echo $hello
 
