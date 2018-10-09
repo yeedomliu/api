@@ -10,3 +10,10 @@ install:
 
 script:
   - ./vendor/bin/phpunit -c phpunit.xml --coverage-text
+
+notifications:
+  email:
+    recipients:
+      - 36749952@qq.com
+      on_success: never
+      on_failure: always
