@@ -11,3 +11,4 @@ nohup.out
 .idea/*
 coverage
 accounts.yml
+build
