@@ -6,6 +6,7 @@ php:
 
 install:
   - composer install -vvv --profile --prefer-dist
+  - echo $hello
 
 script:
   - ./vendor/bin/phpunit -c phpunit.xml --coverage-text
