@@ -9,5 +9,5 @@ install:
 
 script:
   - ./vendor/bin/phpunit -c phpunit.xml --coverage-text
-
+  - echo $hello
 

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="pim" default="help">
+    <property name="build" value="./build"/>
+    <target name="help">
+        <echo>This is Phing menu 1.phing -f test.xml -D build</echo>
+    </target>
+
+    <target name="test">
+        <phpunit haltonfailure="true" printsummary="true">
+            <batchtest>
+                <fileset dir="./tests">
+                    <include name="*Test.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+    </target>
+
+    <target name="build" depends="get">
+        <echo msg="Build the directory"></echo>
+        <mkdir dir="${build}"/>
+        <echo msg="copy file to server directory"></echo>
+        <copy todir="${build}">
+            <fileset dir="inc"></fileset>
+        </copy>
+        <echo msg="copy ok"></echo>
+    </target>
+
+    <target name="get">
+        <gitcheckout repository="https://code.wiiqq.com/git/wii/wii-sqm.git" branchname="1.0.0-dev" gitPath="/tmp/wii-sqm-test" />
+    </target>
+</project>

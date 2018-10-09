@@ -1,0 +1,33 @@
+{
+  "name": "yeedomliu/api",
+  "description": "通用接口封装",
+  "version": "1.0.0",
+  "type": "library",
+  "keywords": [
+    "接口封装"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yeedomliu",
+      "email": "36749952@qq.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.wiiqq.com/"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "yeedomliu\\api\\": "src"
+    }
+  }
+}
