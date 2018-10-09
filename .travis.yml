@@ -17,4 +17,3 @@ notifications:
       - 36749952@qq.com
       on_success: always
       on_failure: always
-
