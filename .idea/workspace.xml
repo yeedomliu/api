@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
           <entry key="gitignore" value="6" />
           <entry key="html" value="1" />
           <entry key="json" value="6" />
-          <entry key="md" value="10" />
+          <entry key="md" value="11" />
           <entry key="php" value="86" />
           <entry key="xml" value="6" />
           <entry key="yml" value="6" />
@@ -54,7 +54,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="Markdown" value="10" />
+          <entry key="Markdown" value="11" />
           <entry key="PHP" value="86" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="6" />
@@ -105,11 +105,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="304">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="721">
+                <caret line="556" lean-forward="true" selection-start-line="556" selection-end-line="556" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -151,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/GenField.php" />
         <option value="$PROJECT_DIR$/src/outputformat/Json.php" />
         <option value="$PROJECT_DIR$/src/example/OutputFormatArray.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/example/WorkWechat.php" />
         <option value="$PROJECT_DIR$/src/requestfields/OutputFormatObj.php" />
         <option value="$PROJECT_DIR$/src/example/HelloWorld.php" />
@@ -171,6 +182,7 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -229,11 +241,6 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -285,7 +292,7 @@
       <workItem from="1538968338749" duration="101000" />
       <workItem from="1538968452384" duration="24000" />
       <workItem from="1538968750788" duration="26432000" />
-      <workItem from="1539068774050" duration="230000" />
+      <workItem from="1539068774050" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -298,13 +305,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26787000" />
+    <option name="totallyTimeSpent" value="26847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978166" visible="true" weight="0.12592137" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978166" weight="0.12530713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021834" side_tool="true" weight="0.124078624" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -431,16 +438,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/AccessToken.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/phpunit_bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -597,8 +594,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="304">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="721">
+            <caret line="556" lean-forward="true" selection-start-line="556" selection-end-line="556" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
