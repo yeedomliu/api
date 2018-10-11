@@ -12,13 +12,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/yeedomliu/api.svg)
 
 
-
-
-
-
-
-
-
 ## 介绍
 
 通用接口封装服务是针对接口请求调用的服务，具有**快速、简单、灵活、关注真正逻辑**的特点，使用该服务可以快速地针对请求接口功能进行封装，如微信、企业微信、腾讯云、新浪微博等众api快速实现。
