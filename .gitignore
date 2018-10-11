@@ -9,6 +9,6 @@ tmp/
 nohup.out
 .idea
 .idea/*
-coverage
+coverage/
 accounts.yml
-build
+build/

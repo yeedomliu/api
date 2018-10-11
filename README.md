@@ -7,6 +7,10 @@
 ## yeedomliu/api
 
 [![Build Status](https://travis-ci.org/yeedomliu/api.svg?branch=master)](https://travis-ci.org/yeedomliu/api)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)
+
+
 
 
 
