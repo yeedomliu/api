@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requestfields/CurlOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/requestfields/CurlOptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,7 @@
           <entry key="html" value="1" />
           <entry key="json" value="9" />
           <entry key="md" value="12" />
-          <entry key="php" value="100" />
+          <entry key="php" value="101" />
           <entry key="xml" value="9" />
           <entry key="yml" value="8" />
         </counts>
@@ -60,7 +58,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="9" />
           <entry key="Markdown" value="12" />
-          <entry key="PHP" value="100" />
+          <entry key="PHP" value="101" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="9" />
           <entry key="YAML" value="8" />
@@ -110,11 +108,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -133,6 +140,7 @@
       <find>report</find>
       <find>Wii</find>
       <find>Curl</find>
+      <find>$status</find>
     </findStrings>
     <replaceStrings>
       <replace>yeedomliu\api</replace>
@@ -169,7 +177,6 @@
         <option value="$PROJECT_DIR$/tests/unit/GetfieldsTest.php" />
         <option value="$PROJECT_DIR$/tests/unit/PostfieldsTest.php" />
         <option value="$PROJECT_DIR$/tests/unit/ExcludefieldsTest.php" />
-        <option value="$PROJECT_DIR$/src/Request.php" />
         <option value="$PROJECT_DIR$/tests/phpunit.xml" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/Base.php" />
@@ -184,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/fieldstyle/LcfirstCamelize.php" />
         <option value="$PROJECT_DIR$/src/requestfields/CurlOptions.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Request.php" />
       </list>
     </option>
   </component>
@@ -276,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="CurlOp&#9;null&#9;null&#10;BaiduTranslate&#9;null&#9;null&#10;Unders&#9;null&#9;null&#10;Base&#9;FILE&#9;file:///data/code/website/yeedomliu/api/src/Base.php&#10;Event.php&#9;FILE&#9;file:///data/code/website/yeedomliu/api/src/Event.php" />
+    <property name="SearchEverywhereHistoryKey" value="Request&#9;FILE&#9;file:///data/code/website/yeedomliu/api/src/Request.php&#10;CurlOp&#9;null&#9;null&#10;BaiduTranslate&#9;null&#9;null&#10;Unders&#9;null&#9;null&#10;Base&#9;FILE&#9;file:///data/code/website/yeedomliu/api/src/Base.php&#10;Event.php&#9;FILE&#9;file:///data/code/website/yeedomliu/api/src/Event.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit 6+" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -329,7 +337,7 @@
       <workItem from="1539151309462" duration="611000" />
       <workItem from="1539241021211" duration="1619000" />
       <workItem from="1539256936230" duration="616000" />
-      <workItem from="1539392160399" duration="1016000" />
+      <workItem from="1539392160399" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -342,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36182000" />
+    <option name="totallyTimeSpent" value="36265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -539,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build_bak.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -679,6 +680,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
         </state>
       </provider>
     </entry>

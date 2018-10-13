@@ -132,7 +132,7 @@ class Request
                         curl_setopt_array($ch, $this->getCurlOptions());
                         $return = curl_exec($ch);
                     }
-                    $status = curl_getinfo($ch);
+//                    $status = curl_getinfo($ch);
                 }
             }
 
