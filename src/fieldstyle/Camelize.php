@@ -2,7 +2,7 @@
 
 namespace yeedomliu\api\fieldstyle;
 
-use wii\helpers\Inflector;
+use yeedomliu\api\helper\Inflector;
 
 /**
  * Class Camelize

@@ -2,7 +2,7 @@
 
 namespace yeedomliu\api\fieldstyle;
 
-use wii\helpers\Inflector;
+use yeedomliu\api\helper\Inflector;
 
 /**
  * Class LcfirstCamelize
@@ -17,6 +17,5 @@ class LcfirstCamelize extends Base
     public function handle($name) {
         return lcfirst(Inflector::camelize($name));
     }
-
 
 }

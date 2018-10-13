@@ -2,6 +2,8 @@
 
 namespace yeedomliu\api\fieldstyle;
 
+use yeedomliu\api\helper\Inflector;
+
 /**
  * Class Underscore
  *
@@ -13,7 +15,7 @@ class Underscore extends Base
 {
 
     public function handle($name) {
-        return strtolower(preg_replace('/(?<=\\w)([A-Z])/', '_\\1', $name));
+        return Inflector::underscore($name);
     }
 
 }
