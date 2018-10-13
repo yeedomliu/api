@@ -55,7 +55,7 @@ trait CurlOptions
      * @return $this
      */
     public function addCurlOptions(array $options) {
-        if ($options) {
+        if ( ! empty($options)) {
             foreach ($options as $name => $value) {
                 $this->addCurlOption($name, $value);
             }

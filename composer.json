@@ -13,7 +13,7 @@
       "email": "36749952@qq.com"
     }
   ],
-  "require-dev": {
+  "require": {
     "linslin/yii2-curl": "1.2.1"
   },
   "require-dev": {
