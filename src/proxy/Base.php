@@ -10,7 +10,6 @@ use yeedomliu\api\requestfields\JsonEncodeFields;
 use yeedomliu\api\requestfields\Method;
 use yeedomliu\api\requestfields\CurlOptions;
 use yeedomliu\api\requestfields\Prefix;
-use yeedomliu\api\requestfields\Raw;
 use yeedomliu\api\requestfields\OutputFormatObj;
 use yeedomliu\api\requestfields\Url;
 
