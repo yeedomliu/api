@@ -49,11 +49,11 @@ class Base
     public function getUri() {
         $url = $this->url();
         $getFieldArray = array_merge($this->getDefaultGetFields(), $this->getGetFields());
-        if ($getFieldArray) {
+        if ( ! empty($getFieldArray)) {
             $keyValues = array_map(function ($name, $value) {
                 return "{$name}={$value}";
             }, array_keys($getFieldArray), $getFieldArray);
-            if ($keyValues) {
+            if ( ! empty($keyValues)) {
                 $url .= (preg_match('/\?/is', $url) ? "&" : "?") . join('&', $keyValues);
             }
         }
@@ -124,7 +124,7 @@ class Base
             $traits = $obj->getTraits();
             if ($obj->getParentClass() && self::class != $obj->getParentClass()->name) {
                 $parentTraits = $obj->getParentClass()->getTraits();
-                if ($parentTraits) {
+                if ( ! empty($parentTraits)) {
                     $traits = array_merge($traits, $parentTraits);
                 }
             }
@@ -188,7 +188,7 @@ class Base
         // 请求头部处理
         {
             $requestHeaders = array_merge($this->requestHeaders(), $this->getFullSetHeaderArray());
-            if ($requestHeaders) {
+            if ( ! empty($requestHeaders)) {
                 foreach ($requestHeaders as $key => $value) {
                     $requestObj->addHeader($key, $value);
                 }
