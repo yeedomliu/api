@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854b4627-c6a1-4d9c-886c-04bda4585271" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/1.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +45,11 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cache" value="1" />
-          <entry key="gitignore" value="8" />
+          <entry key="gitignore" value="9" />
           <entry key="html" value="1" />
-          <entry key="json" value="10" />
+          <entry key="json" value="11" />
           <entry key="md" value="12" />
-          <entry key="php" value="113" />
+          <entry key="php" value="114" />
           <entry key="xml" value="9" />
           <entry key="yml" value="9" />
         </counts>
@@ -59,10 +57,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="10" />
+          <entry key="JSON" value="11" />
           <entry key="Markdown" value="12" />
-          <entry key="PHP" value="113" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="PHP" value="114" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="9" />
           <entry key="YAML" value="9" />
         </counts>
@@ -73,7 +71,7 @@
           <entry key="gitignore" value="24" />
           <entry key="json" value="35" />
           <entry key="md" value="147" />
-          <entry key="php" value="3481" />
+          <entry key="php" value="3564" />
           <entry key="txt" value="65" />
           <entry key="xml" value="392" />
           <entry key="yml" value="128" />
@@ -83,7 +81,7 @@
         <counts>
           <entry key="JSON" value="35" />
           <entry key="Markdown" value="147" />
-          <entry key="PHP" value="3481" />
+          <entry key="PHP" value="3564" />
           <entry key="PLAIN_TEXT" value="132" />
           <entry key="XML" value="392" />
           <entry key="YAML" value="128" />
@@ -135,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
+            <state relative-caret-position="-1752">
               <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
               <folding>
                 <element signature="e#33#78#0#PHP" expanded="true" />
@@ -153,11 +151,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="242">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tmp/1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -229,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/example/HelloWorld.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/tmp/1.php" />
       </list>
     </option>
   </component>
@@ -238,7 +246,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
@@ -325,17 +333,6 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -374,6 +371,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tmp/1.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.1.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -401,7 +408,7 @@
       <workItem from="1539393812695" duration="3104000" />
       <workItem from="1539470634647" duration="78000" />
       <workItem from="1546410195471" duration="2000" />
-      <workItem from="1548681413125" duration="1145000" />
+      <workItem from="1548681413125" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -414,18 +421,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41015000" />
+    <option name="totallyTimeSpent" value="41999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978166" visible="true" weight="0.1526576" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978166" visible="true" weight="0.1526576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021834" side_tool="true" weight="0.124078624" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,7 +459,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="push" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/unit/BaseTest.php" />
     <entry file="file://$PROJECT_DIR$/src/GenField.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -732,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
+        <state relative-caret-position="-1752">
           <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
           <folding>
             <element signature="e#33#78#0#PHP" expanded="true" />
@@ -749,8 +755,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="242">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
