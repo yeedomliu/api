@@ -1,5 +1,4 @@
 <?php
-
 namespace yeedomliu\api\example;
 
 use yeedomliu\api\Base;
