@@ -14,6 +14,7 @@ use yeedomliu\api\requestfields\ExcludeFields;
 use yeedomliu\api\requestfields\FullUrl;
 use yeedomliu\api\requestfields\GetFields;
 use yeedomliu\api\requestfields\HeaderGetterSetter;
+use yeedomliu\api\requestfields\Headers;
 use yeedomliu\api\requestfields\HttpBuildQuery;
 use yeedomliu\api\requestfields\Method;
 use yeedomliu\api\requestfields\OutputFormatObj;
@@ -28,7 +29,7 @@ use yeedomliu\api\requestfields\UrlPrefix;
 class Base
 {
 
-    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeFields, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery, Timeout, Prefix, Method;
+    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeFields, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, Headers, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery, Timeout, Prefix, Method;
 
     public function getCacheKey(): string {
         return $this->cacheKey ? $this->cacheKey : "{$this->getFullUrl()}{$this->isPostMethod()}";
@@ -121,7 +122,7 @@ class Base
     }
 
     /**
-     * 获取处理完字段数组
+     * 获取处理完字段数组(把trait的属性都转换为字段名)
      * 1.获取trait字段数组
      * 2.加入默认字段、自定义字段、去除排除字段
      *
@@ -200,14 +201,9 @@ class Base
             $requestHeaders = array_merge($this->requestHeaders(), $this->getFullSetHeaderArray());
             if ( ! empty($requestHeaders)) {
                 foreach ($requestHeaders as $key => $value) {
-                    $requestObj->addHeader($key, $value);
+                    $this->addHeader($key, $value);
                 }
             }
-        }
-
-        // 把trait的属性都转换为字段名
-        {
-            $fields = $this->getHandledFields();
         }
 
         // 请求处理

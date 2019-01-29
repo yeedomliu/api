@@ -107,14 +107,14 @@ class GuzzleRequest
     public function request() {
         try {
             $base = $this->getBase();
+            $options = [];
             // 请求字段处理
             {
                 $url = $this->getFullUrl();
                 $fields = $this->getFullFields();
-                //                if ($this->isPostMethod()) {
-                //                    $this->addCurlOption(CURLOPT_POST, true);
-                //                    $this->addCurlOption(CURLOPT_POSTFIELDS, $fields);
-                //                }
+                if ($base->isPostRequest()) {
+                    $options['body'] = $fields;
+                }
             }
 
             // 请求处理
@@ -126,39 +126,13 @@ class GuzzleRequest
                 if ( ! empty($return)) {
                     return $return;
                 } else {
-                    if ($base->getProxyClass()) {
-                        $return = $base->getProxyClass()
-                                       ->setPrefix($this->getPrefix())
-                                       ->setUrl($url)
-                                       ->setFields($fields)
-                                       ->setJsonEncodeFields($this->isJsonEncodeFields())
-                                       ->setHeaders($this->getHeaders())
-                                       ->setExcludeFields($this->getExcludeFields())
-                                       ->setCurlOptions($this->getCurlOptions())
-                                       ->setHttpBuildQuery($this->isHttpBuildQuery())
-                                       ->setMethod($this->getMethod())
-                                       ->getContent();
+                    $options['headers'] = $base->getHeaders();
+                    $request = $this->request;
+                    if ($base->isPostRequest()) {
+                        $return = $request->post($url, $options)->getBody()->getContents();
                     } else {
-                        //                        $curlOptions = [
-                        //                            CURLOPT_HTTPHEADER     => $this->getHeaders(),
-                        //                            CURLOPT_URL            => $url,
-                        //                            CURLOPT_RETURNTRANSFER => 1,
-                        //                            CURLOPT_TIMEOUT        => $this->getTimeout(),
-                        //                            CURLOPT_CONNECTTIMEOUT => $this->getConnectTimeout(),
-                        //                        ];
-                        //                        if ($this->getCurlOptions()) {
-                        //                            foreach ($this->getCurlOptions() as $key => $value) {
-                        //                                $curlOptions[ $key ] = $value;
-                        //                            }
-                        //                        }
-                        //                        $this->addCurlOptions($curlOptions);
-                        //
-                        //                        curl_setopt_array($ch, $this->getCurlOptions());
-                        //                        $return = curl_exec($ch);
-                        $request = $this->request;
-                        $return = $base->isPostRequest() ? $request->post($url)->getBody()->getContents() : $request->get($url)->getBody()->getContents();
+                        $return = $request->get($url, $options)->getBody()->getContents();
                     }
-                    //                    $status = curl_getinfo($ch);
                 }
             }
 
