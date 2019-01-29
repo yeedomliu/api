@@ -71,7 +71,7 @@
           <entry key="gitignore" value="24" />
           <entry key="json" value="35" />
           <entry key="md" value="147" />
-          <entry key="php" value="5434" />
+          <entry key="php" value="5499" />
           <entry key="txt" value="65" />
           <entry key="xml" value="392" />
           <entry key="yml" value="128" />
@@ -81,7 +81,7 @@
         <counts>
           <entry key="JSON" value="35" />
           <entry key="Markdown" value="147" />
-          <entry key="PHP" value="5434" />
+          <entry key="PHP" value="5499" />
           <entry key="PLAIN_TEXT" value="132" />
           <entry key="XML" value="392" />
           <entry key="YAML" value="128" />
@@ -165,8 +165,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GuzzleRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
+            <state relative-caret-position="510">
+              <caret line="137" column="42" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -471,7 +471,7 @@
       <workItem from="1539393812695" duration="3104000" />
       <workItem from="1539470634647" duration="78000" />
       <workItem from="1546410195471" duration="2000" />
-      <workItem from="1548681413125" duration="6690000" />
+      <workItem from="1548681413125" duration="6782000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1538968795360</created>
@@ -484,7 +484,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46560000" />
+    <option name="totallyTimeSpent" value="46652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -866,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GuzzleRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
+        <state relative-caret-position="510">
+          <caret line="137" column="42" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="49" />
         </state>
       </provider>
     </entry>

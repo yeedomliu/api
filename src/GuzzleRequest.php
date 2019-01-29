@@ -62,6 +62,13 @@ class GuzzleRequest
         return $this->base;
     }
 
+    /**
+     * @return \GuzzleHttp\Client
+     */
+    public function getRequest() {
+        return $this->request;
+    }
+
     //    use Prefix, Url, FullUrl, Fields, Method, JsonEncodeFields, Headers, ExcludeFields, CurlOptions, HttpBuildQuery, CacheTime, CacheKey, ProxyClass, Timeout, ConnectTimeout, ExcludeEmptyField, OutputFormatObj;
 
     /**
@@ -107,6 +114,7 @@ class GuzzleRequest
     public function request() {
         try {
             $base = $this->getBase();
+            $request = $this->getRequest();
             $options = [];
             // 请求字段处理
             {
@@ -127,7 +135,6 @@ class GuzzleRequest
                     return $return;
                 } else {
                     $options['headers'] = $base->getHeaders();
-                    $request = $this->request;
                     if ($base->isPostRequest()) {
                         $return = $request->post($url, $options)->getBody()->getContents();
                     } else {
