@@ -4,6 +4,7 @@ namespace yeedomliu\api;
 
 use yeedomliu\api\fieldstyle\LcfirstCamelize;
 use yeedomliu\api\requestfields\CacheKey;
+use yeedomliu\api\requestfields\CacheObj;
 use yeedomliu\api\requestfields\CacheTime;
 use yeedomliu\api\requestfields\CurlOptions;
 use yeedomliu\api\requestfields\DefaultGetFields;
@@ -14,17 +15,24 @@ use yeedomliu\api\requestfields\FullUrl;
 use yeedomliu\api\requestfields\GetFields;
 use yeedomliu\api\requestfields\HeaderGetterSetter;
 use yeedomliu\api\requestfields\HttpBuildQuery;
+use yeedomliu\api\requestfields\Method;
 use yeedomliu\api\requestfields\OutputFormatObj;
 use yeedomliu\api\requestfields\PostFields;
 use yeedomliu\api\requestfields\PostRequest;
+use yeedomliu\api\requestfields\Prefix;
 use yeedomliu\api\requestfields\ProxyClass;
+use yeedomliu\api\requestfields\Timeout;
 use yeedomliu\api\requestfields\Url;
 use yeedomliu\api\requestfields\UrlPrefix;
 
 class Base
 {
 
-    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeFields, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery;
+    use CacheTime, CacheKey, FullUrl, UrlPrefix, ExcludeFields, ExcludeEmptyField, PostRequest, Url, GetFields, PostFields, DefaultPostFields, DefaultGetFields, HeaderGetterSetter, OutputFormatObj, CurlOptions, ProxyClass, HttpBuildQuery, Timeout, Prefix, Method;
+
+    public function getCacheKey(): string {
+        return $this->cacheKey ? $this->cacheKey : "{$this->getFullUrl()}{$this->isPostMethod()}";
+    }
 
     /**
      * 初始化操作
@@ -64,24 +72,26 @@ class Base
     /**
      * 自定义处理request对象
      *
-     * @param \yeedomliu\api\Request $requestObj
+     * @param \yeedomliu\api\Request|\yeedomliu\api\GuzzleRequest $requestObj
      *
-     * @return \yeedomliu\api\Request
+     * @return \yeedomliu\api\Request|\yeedomliu\api\GuzzleRequest
      */
-    public function requestHandle(Request $requestObj) {
+    public function requestHandle($requestObj) {
         return $requestObj;
     }
 
     /**
      * 获取request对象
      *
-     * @return \yeedomliu\api\Request
+     * @return \yeedomliu\api\GuzzleRequest
      */
     public function getRequestObj() {
-        $requestObj = (new Request());
-        $this->isPostRequest() ? $requestObj->setPostMethod() : $requestObj->setGetMethod();
+        $request = new GuzzleRequest($this);
 
-        return $this->requestHandle($requestObj->setPrefix($this->getUrlPrefix()));
+        return $this->requestHandle($request);
+
+        //        $this->isPostRequest() ? $requestObj->setPostMethod() : $requestObj->setGetMethod();
+        //        return $this->requestHandle($requestObj->setPrefix($this->getUrlPrefix()));
     }
 
     /**
@@ -202,19 +212,20 @@ class Base
 
         // 请求处理
         {
-            $result = $requestObj->setHttpBuildQuery($this->isHttpBuildQuery())
-                                 ->setOutputFormatObj($this->getOutputFormatObj())
-                                 ->setJsonEncodeFields($this->jsonEncodeFields())
-                                 ->setFields($fields)
-                                 ->setExcludeFields($this->getExcludeFields())
-                                 ->setUrl($this->getUri())
-                                 ->setProxyClass($this->getProxyClass())
-                                 ->setMethod($this->isPostRequest() ? Request::METHOD_POST : Request::METHOD_GET)
-                                 ->setFullUrl($this->getFullUrl())
-                                 ->setCurlOptions($this->getCurlOptions())
-                                 ->setCacheTime($this->getCacheTime())
-                                 ->setCacheKey($this->getCacheKey())
-                                 ->request();
+            $result = $requestObj->request();
+            //            $result = $requestObj->setHttpBuildQuery($this->isHttpBuildQuery())
+            //                                 ->setOutputFormatObj($this->getOutputFormatObj())
+            //                                 ->setJsonEncodeFields($this->jsonEncodeFields())
+            //                                 ->setFields($fields)
+            //                                 ->setExcludeFields($this->getExcludeFields())
+            //                                 ->setUrl($this->getUri())
+            //                                 ->setProxyClass($this->getProxyClass())
+            //                                 ->setMethod($this->isPostRequest() ? Request::METHOD_POST : Request::METHOD_GET)
+            //                                 ->setFullUrl($this->getFullUrl())
+            //                                 ->setCurlOptions($this->getCurlOptions())
+            //                                 ->setCacheTime($this->getCacheTime())
+            //                                 ->setCacheKey($this->getCacheKey())
+            //                                 ->request();
 
             $this->checkResult($result);
         }
